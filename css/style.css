@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,600;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+nav {
+    background: #2193b0;
+    background: #1488CC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2B32B2, #1488CC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    min-height: 12vh;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+nav .navbrand {
+    margin-left: 10px;
+}
+
+nav .navbrand a {
+    color: #ffffff;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+#image-plate {
+    display: flex;
+    margin-left: 0px;
+    transition: 1s ease;
+}
+
+header {
+    height: 80vh;
+    width: 100%;
+    /* background-color:#ecf0f1; */
+    padding-top: 5%;
+    overflow: hidden;
+}
+
+section {
+    margin: 100px 0px;
+}
+
+main .about-section {
+    margin-bottom: 40px;
+}
+
+main .about-section h2 {
+    color: #2d3436;
+    margin: 10px 0px;
+}
+
+main .about-section .section-content-wrapper {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 30px 40px;
+    border-radius: 10px;
+}
+
+main .about-section .section-content-wrapper p {
+    color: rgb(107, 107, 107);
+    font-weight: 700;
+}
+
+main .skill-section {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 40px;
+}
+
+main .skill-section h2 {
+    color: #2d3436;
+    margin: 10px 0px;
+}
+
+main .skill-section .skill-section-template {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .skill-section .image-profile {
+    background-color: #ecf0f1;
+    width: 30%;
+    height: 400px;
+    border-radius: 10px;
+    background-image: url(../images/skill-cards.png);
+    background-size: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: .3s ease;
+}
+
+main .skill-section .image-profile:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+main .skill-section .skill-graphic {
+    width: 60%;
+    height: 400px;
+    background-image: url("../images/graphic.png");
+    background-size: cover;
+}
+
+main .project-section {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 40px;
+}
+
+main .project-section img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+main .project-section h2 {
+    color: #2d3436;
+    margin: 10px 0px;
+}
+
+.small-card button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    position: absolute;
+    bottom: 5%;
+    right: 50%;
+    background-color: #fda013;
+    transform: translateX(50%);
+    color: rgb(255, 255, 255);
+    z-index: 99;
+    font-weight: 800;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: 1s ease;
+}
+
+.small-card:hover button {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+main .contact-section {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 40px;
+}
+
+main .contact-section h2 {
+    color: #2d3436;
+    margin: 10px 0px;
+}
+
+footer {
+    height: 20vh;
+    width: 100%;
+    background: #2193b0;
+    background: #1488CC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2B32B2, #1488CC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding: 20px 0px;
+}
+
+footer p {
+    color: #ffffff;
+    text-align: center;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+/* css components */
+.d-flex-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.d-flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*reusable css not responsive*/
+
+.small-card {
+    width: 20%;
+    height: 300px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    transition: .3s ease;
+}
+
+.small-card:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transform: scale(1.1);
+}
+
+/* .small-card::after{
+    content: "";
+    position: absolute;
+    background:linear-gradient(rgba(0, 0, 0, 0) 70%,rgb(46, 46, 46));
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    border-radius: 0px 0px 10px 10px;
+} */
+
+.super-small-card {
+    width: 10%;
+    height: 100px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    position: relative;
+}
+
+.super-small-card img {
+    width: 100%;
+    height: 100%;
+}
+
+/* responsive area */
+@media only screen and (max-width: 600px) {
+
+    nav {
+        min-height: 15vh;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+
+    header {
+        height: 30vh;
+        width: 100%;
+        /* background-color:#ecf0f1; */
+        padding-top: 15%;
+    }
+
+    main .skill-section h2,
+    main .about-section h2,
+    main .project-section h2,
+    main .contact-section h2 {
+        color: #2d3436;
+        margin: 10px 0px;
+        font-size: 1.1em;
+    }
+
+    main .about-section .section-content-wrapper p {
+        font-size: .9em;
+    }
+
+    main .skill-section .skill-section-template {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .skill-section .image-profile {
+        background-color: #ecf0f1;
+        width: 80%;
+        height: 300px;
+        border-radius: 10px;
+    }
+
+    main .skill-section .skill-graphic {
+        width: 100%;
+        height: 100px;
+        margin: 10px 0px 0px 0px;
+    }
+
+    main .project-section {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 40px;
+    }
+
+    .small-card button {
+        padding: 10px 20px;
+        border-radius: 4px;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        position: absolute;
+        bottom: 5%;
+        right: 50%;
+        transform: translateX(50%);
+        color: rgb(255, 255, 255);
+    }
+
+    /* css reusable  */
+    .d-flex-around {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .d-flex-between {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .small-card {
+        width: 60%;
+        height: 300px;
+        background-color: #ecf0f1;
+        border-radius: 10px;
+        position: relative;
+        margin: 15px 0px;
+    }
+
+    .super-small-card {
+        width: 40%;
+        height: 50px;
+        margin: 15px 0px;
+        background-color: #ecf0f1;
+        border-radius: 10px;
+    }
+
+    main .skill-section .image-profile {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+}
+
+
+/* slider css */
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.slideshow-container img {
+    border-radius: 10px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
