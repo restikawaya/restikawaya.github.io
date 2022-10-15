@@ -1,2 +1,2 @@
 # restikawy
-restikawya.github.io
+restikawaya.github.io
