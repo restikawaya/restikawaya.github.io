@@ -1,2 +1,2 @@
 # restikawy
-restikawy
+restikawya.github.io
